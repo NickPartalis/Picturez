@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Royalty-free Pictures</title>
+</head>
+<body>
+   <!--  HEADER -->
+    <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+        <section class="hero is-small is-link">
+            <div class="hero-body">
+                <p class="title">Picturez</p>
+                <p class="subtitle is-6">Royalty-free Pictures</p>
+            </div>
+        </section>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary" href="javascript:;" onclick="alert('Not implemented.')"><strong>Sign up</strong></a>
+                    <a class="button is-light" href="javascript:;" onclick="alert('Not implemented.')">Log in</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SEARCH BAR SECTION -->
+    <section class="section">
+        <h1 class="mb-2 is-size-4 has-text-weight-bold">Picture Search</h1>
+        <div class="field has-addons has-addon-right">
+            <div class="control is-expanded">
+                <input class="input is-primary is-rounded" id="search-box" type="text" placeholder="e.g. Beach, Sunset, Mountains">
+            </div>
+            <div class="control">
+                <span class="select is-primary">
+                  <select id="resultsPerPage">
+                    <option value="12" selected>Results/page: 12</option>
+                    <option value="20">Results/page: 20</option>
+                    <option value="28">Results/page: 28</option> <!-- Max results allowed from API: 30 -->
+                  </select>
+                </span>
+            </div>
+            <div class="control">
+                <input type="button" class="button is-primary is-rounded" id="search-btn" value="Search">
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH RESULTS SECTION -->
+    <section class="section">
+        <div class="columns is-multiline" id="search-results">
+        </div>
+    </section>
+
+    <!-- PAGINATION -->
+    <div class="container">
+        <nav class="pagination is-centered" id="paginationContainer"role="navigation" aria-label="pagination">
+            <a class="pagination-previous">< Previous</a>
+            <a class="pagination-next">Next ></a>
+            <ul class="pagination-list" id="myPagination">
+            </ul>
+        </nav>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

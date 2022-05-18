@@ -1,0 +1,17 @@
+img{
+    object-fit: cover;
+}
+
+.favorite{
+    background-color: gold;
+}
+
+.card-footer-item{
+    padding-bottom: 0;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+}
